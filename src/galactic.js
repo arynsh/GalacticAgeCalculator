@@ -53,3 +53,13 @@ export class Age {
   }
 
 }
+
+export class Keith {
+  constructor(age) {
+    this.age = age;
+  }
+
+  ageInDogYearsOnPlanetJupiter() {
+    return ((this.age + 54) * 7) / 11.86;
+  }
+}

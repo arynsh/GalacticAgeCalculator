@@ -2,7 +2,7 @@ import $ from "jquery";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { Age } from './../src/galactic.js';
+import { Age, Keith } from './../src/galactic.js';
 
 $(document).ready(function() {
   $("#form").submit(function(event) {
@@ -26,6 +26,8 @@ $(document).ready(function() {
     let userVenusLifeExpSurpass = userAge.lifeExpVenusSurpass();
     let userMarsLifeExpSurpass = userAge.lifeExpMarsSurpass();
     let userJupiterLifeExpSurpass = userAge.lifeExpJupiterSurpass();
+    let keithRichardsAge = new Keith (75);
+    let keithRichardsDogAgeOnJup = keithRichardsAge.ageInDogYearsOnPlanetJupiter().toFixed(3);
 
     $("#results").show();
     $("#yourage").show();
@@ -33,6 +35,7 @@ $(document).ready(function() {
     $(".venusage").text(userVenusAge);
     $(".marsage").text(userMarsAge);
     $(".jupage").text(userJupiterAge);
+    $(".keith").text(keithRichardsDogAgeOnJup);
 
     if (userInputAge < userInputLifeExp) {
       $("#liferemaining").show();
