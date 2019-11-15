@@ -32,4 +32,13 @@ describe('Age', () => {
     expect(parseInt(userAge.lifeExpVenus().toFixed())).toEqual(79);
   });
 
+  test('should correctly return the users life expectancy on mars', () => {
+    let userAge = new Age (29, 78);
+    expect(parseInt(userAge.lifeExpMars().toFixed())).toEqual(26);
+  });
+
+  test('should correctly return the users life expectancy on jupiter', () => {
+    let userAge = new Age (29, 78);
+    expect(parseInt(userAge.lifeExpJupiter().toFixed())).toEqual(4);
+  });
 });

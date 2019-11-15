@@ -13,5 +13,7 @@ $(document).ready(function() {
     let userVenusAge = userAge.ageOnJupiter();
     let userMercuryLifeExp = userAge.lifeExpMercury();
     let userVenusLifeExp = userAge.lifeExpVenus();
+    let userMarsLifeExp = userAge.lifeExpMars();
+    let userJupiterLifeExp = userAge.lifeExpJupiter();
   });
 });

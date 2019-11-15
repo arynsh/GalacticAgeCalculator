@@ -28,4 +28,12 @@ export class Age {
     return (this.lifeexp - this.age) / 0.62;
   }
 
+  lifeExpMars() {
+    return (this.lifeexp - this.age) / 1.88;
+  }
+
+  lifeExpJupiter() {
+    return (this.lifeexp - this.age) / 11.86;
+  }
+
 }
