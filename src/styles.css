@@ -1,0 +1,18 @@
+.container {
+  margin: 50px;
+}
+
+.jumbotron {
+  text-align: center;
+  margin: 54px;
+  background-color: black;
+}
+
+#results {
+  display: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}

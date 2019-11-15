@@ -27,6 +27,7 @@ $(document).ready(function() {
     let userMarsLifeExpSurpass = userAge.lifeExpMarsSurpass();
     let userJupiterLifeExpSurpass = userAge.lifeExpJupiterSurpass();
 
+    $("#results").show();
     $("#yourage").show();
     $(".mercage").text(userMercuryAge);
     $(".venusage").text(userVenusAge);
