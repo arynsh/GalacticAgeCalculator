@@ -29,24 +29,24 @@ $(document).ready(function() {
     let userMarsLifeExpSurpass = userAge1.lifeExpMarsSurpass();
     let userJupiterLifeExpSurpass = userAge1.lifeExpJupiterSurpass();
 
-    $("").show();
-    $("").text(userMercuryAge);
-    $("").text(userVenusAge);
-    $("").text(userMarsAge);
-    $("").text(userJupiterAge);
+    $("#yourage").show();
+    $(".mercage").text(userMercuryAge);
+    $(".venusage").text(userVenusAge);
+    $(".marsage").text(userMarsAge);
+    $(".jupage").text(userJupiterAge);
 
     if (userInputAge < userInputLifeExp) {
-      $("").show();
-      $("").text(userMercuryLifeExp);
-      $("").text(userVenusLifeExp);
-      $("").text(userMarsLifeExp);
-      $("").text(userJupiterLifeExp);
+      $("#liferemaining").show();
+      $(".mercexp").text(userMercuryLifeExp);
+      $(".venusexp").text(userVenusLifeExp);
+      $(".marsexp").text(userMarsLifeExp);
+      $(".jupiterexp").text(userJupiterLifeExp);
     } else {
-      $("").show();
-      $("").text(userMercuryLifeExpSurpass);
-      $("").text(userVenusLifeExpSurpass);
-      $("").text(userMarsLifeExpSurpass);
-      $("").text(userJupiterLifeExpSurpass);
+      $("#lifesurp").show();
+      $(".mercsur").text(userMercuryLifeExpSurpass);
+      $(".venussur").text(userVenusLifeExpSurpass);
+      $(".marssur").text(userMarsLifeExpSurpass);
+      $(".jupitersur").text(userJupiterLifeExpSurpass);
     }
 
   });
