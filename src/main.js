@@ -7,5 +7,9 @@ $(document).ready(function() {
     let userInputAge = 29;
     let userAge = new Age (userInputAge);
     let userMercAge = userAge.ageOnMercury();
+    let userVenusAge = userAge.ageOnVenus();
+    let userVenusAge = userAge.ageOnMars();
+    let userVenusAge = userAge.ageOnJupiter();
+
   });
 });
