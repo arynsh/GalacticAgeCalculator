@@ -41,4 +41,25 @@ describe('Age', () => {
     let userAge = new Age (29, 78);
     expect(parseInt(userAge.lifeExpJupiter().toFixed())).toEqual(4);
   });
+
+  test('should correctly return the users surpassed life expectancy years on mercury', () => {
+    let userAge1 = new Age (80, 78);
+    expect(parseInt(userAge1.lifeExpMercurySurpass().toFixed())).toEqual(8);
+  });
+
+  test('should correctly return the users surpassed life expectancy years on venus', () => {
+    let userAge1 = new Age (80, 78);
+    expect(parseInt(userAge1.lifeExpVenusSurpass().toFixed())).toEqual(3);
+  });
+
+  test('should correctly return the users surpassed life expectancy years on mars', () => {
+    let userAge1 = new Age (80, 78);
+    expect(parseInt(userAge1.lifeExpMarsSurpass().toFixed())).toEqual(1);
+  });
+
+  test('should correctly return the users surpassed life expectancy years on jupiter', () => {
+    let userAge1 = new Age (80, 78);
+    expect(parseInt(userAge1.lifeExpJupiterSurpass().toFixed())).toEqual(0);
+  });
+
 });

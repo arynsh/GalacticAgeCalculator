@@ -36,4 +36,20 @@ export class Age {
     return (this.lifeexp - this.age) / 11.86;
   }
 
+  lifeExpMercurySurpass() {
+    return (this.age - this.lifeexp) / 0.24;
+  }
+
+  lifeExpVenusSurpass() {
+    return (this.age - this.lifeexp) / 0.62;
+  }
+
+  lifeExpMarsSurpass() {
+    return (this.age - this.lifeexp) / 1.88;
+  }
+
+  lifeExpJupiterSurpass() {
+    return (this.age - this.lifeexp) / 11.86;
+  }
+
 }
