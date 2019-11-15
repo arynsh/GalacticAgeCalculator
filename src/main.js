@@ -12,15 +12,15 @@ $(document).ready(function() {
     let userInputLifeExp = $("#lifeexp").val();
     let userAge = new Age (userInputAge, userInputLifeExp);
 
-    let userMercuryAge = userAge.ageOnMercury();
-    let userVenusAge = userAge.ageOnVenus();
-    let userMarsAge = userAge.ageOnMars();
-    let userJupiterAge = userAge.ageOnJupiter();
+    let userMercuryAge = userAge.ageOnMercury().toFixed(4);
+    let userVenusAge = userAge.ageOnVenus().toFixed(4);
+    let userMarsAge = userAge.ageOnMars().toFixed(4);
+    let userJupiterAge = userAge.ageOnJupiter().toFixed(4);
 
-    let userMercuryLifeExp = userAge.lifeExpMercury();
-    let userVenusLifeExp = userAge.lifeExpVenus();
-    let userMarsLifeExp = userAge.lifeExpMars();
-    let userJupiterLifeExp = userAge.lifeExpJupiter();
+    let userMercuryLifeExp = userAge.lifeExpMercury().toFixed();
+    let userVenusLifeExp = userAge.lifeExpVenus().toFixed();
+    let userMarsLifeExp = userAge.lifeExpMars().toFixed();
+    let userJupiterLifeExp = userAge.lifeExpJupiter().toFixed();
 
     let userMercuryLifeExpSurpass = userAge.lifeExpMercurySurpass();
     let userVenusLifeExpSurpass = userAge.lifeExpVenusSurpass();
