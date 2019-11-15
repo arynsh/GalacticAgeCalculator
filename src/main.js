@@ -5,14 +5,12 @@ import './styles.css';
 import { Age } from './../src/galactic.js';
 
 $(document).ready(function() {
-  $("").submit(function(event) {
+  $("#form").submit(function(event) {
     event.preventDefault();
 
-    let userInputAge = 29;
-    let userInputAge1 = 80;
-    let userInputLifeExp = 78;
+    let userInputAge = $("#age").val();
+    let userInputLifeExp = $("#lifeexp").val();
     let userAge = new Age (userInputAge, userInputLifeExp);
-    let userAge1 = new Age (userInputAge1, userInputLifeExp); // new instance was made so previous tests using 29 still pass
 
     let userMercuryAge = userAge.ageOnMercury();
     let userVenusAge = userAge.ageOnVenus();
@@ -24,10 +22,10 @@ $(document).ready(function() {
     let userMarsLifeExp = userAge.lifeExpMars();
     let userJupiterLifeExp = userAge.lifeExpJupiter();
 
-    let userMercuryLifeExpSurpass = userAge1.lifeExpMercurySurpass();
-    let userVenusLifeExpSurpass = userAge1.lifeExpVenusSurpass();
-    let userMarsLifeExpSurpass = userAge1.lifeExpMarsSurpass();
-    let userJupiterLifeExpSurpass = userAge1.lifeExpJupiterSurpass();
+    let userMercuryLifeExpSurpass = userAge.lifeExpMercurySurpass();
+    let userVenusLifeExpSurpass = userAge.lifeExpVenusSurpass();
+    let userMarsLifeExpSurpass = userAge.lifeExpMarsSurpass();
+    let userJupiterLifeExpSurpass = userAge.lifeExpJupiterSurpass();
 
     $("#yourage").show();
     $(".mercage").text(userMercuryAge);
@@ -37,12 +35,14 @@ $(document).ready(function() {
 
     if (userInputAge < userInputLifeExp) {
       $("#liferemaining").show();
+      $("#lifesurp").hide();
       $(".mercexp").text(userMercuryLifeExp);
       $(".venusexp").text(userVenusLifeExp);
       $(".marsexp").text(userMarsLifeExp);
       $(".jupiterexp").text(userJupiterLifeExp);
     } else {
       $("#lifesurp").show();
+      $("#liferemaining").hide();
       $(".mercsur").text(userMercuryLifeExpSurpass);
       $(".venussur").text(userVenusLifeExpSurpass);
       $(".marssur").text(userMarsLifeExpSurpass);
