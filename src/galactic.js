@@ -1,6 +1,7 @@
 export class Age {
-  constructor(age) {
+  constructor(age, lifeexp) {
     this.age = age;
+    this.lifeexp = lifeexp;
   }
 
   ageOnMercury() {
@@ -17,6 +18,14 @@ export class Age {
 
   ageOnJupiter() {
     return this.age / 11.86;
+  }
+
+  lifeExpMercury() {
+    return (this.lifeexp - this.age) / 0.24;
+  }
+
+  lifeExpVenus() {
+    return (this.lifeexp - this.age) / 0.62;
   }
 
 }

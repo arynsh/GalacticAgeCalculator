@@ -5,11 +5,13 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userInputAge = 29;
-    let userAge = new Age (userInputAge);
-    let userMercAge = userAge.ageOnMercury();
+    let userInputLifeExp = 78;
+    let userAge = new Age (userInputAge, userInputLifeExp);
+    let userMercuryAge = userAge.ageOnMercury();
     let userVenusAge = userAge.ageOnVenus();
     let userVenusAge = userAge.ageOnMars();
     let userVenusAge = userAge.ageOnJupiter();
-
+    let userMercuryLifeExp = userAge.lifeExpMercury();
+    let userVenusLifeExp = userAge.lifeExpVenus();
   });
 });
