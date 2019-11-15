@@ -6,11 +6,18 @@
     <title></title>
   </head>
   <body>
-    <form id="form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Galactic Age Calculator</h2>
+      </div>
+      <form id="form">
+        <label for="age">Enter your age:</label>
+        <input id="age" type="number">
+        <label for="lifeexp">Enter demographic's life expectancy:</label>
+        <input id="lifeexp" type="number">
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
     <ul id="solution"></ul>
   </body>
 </html>

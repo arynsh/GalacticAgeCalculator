@@ -1,3 +1,7 @@
+import $ from "jquery";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 import { Age } from './../src/galactic.js';
 
 $(document).ready(function() {
@@ -12,8 +16,8 @@ $(document).ready(function() {
 
     let userMercuryAge = userAge.ageOnMercury();
     let userVenusAge = userAge.ageOnVenus();
-    let userVenusAge = userAge.ageOnMars();
-    let userVenusAge = userAge.ageOnJupiter();
+    let userMarsAge = userAge.ageOnMars();
+    let userJupiterAge = userAge.ageOnJupiter();
 
     let userMercuryLifeExp = userAge.lifeExpMercury();
     let userVenusLifeExp = userAge.lifeExpVenus();
@@ -24,6 +28,26 @@ $(document).ready(function() {
     let userVenusLifeExpSurpass = userAge1.lifeExpVenusSurpass();
     let userMarsLifeExpSurpass = userAge1.lifeExpMarsSurpass();
     let userJupiterLifeExpSurpass = userAge1.lifeExpJupiterSurpass();
+
+    $("").show();
+    $("").text(userMercuryAge);
+    $("").text(userVenusAge);
+    $("").text(userMarsAge);
+    $("").text(userJupiterAge);
+
+    if (userInputAge < userInputLifeExp) {
+      $("").show();
+      $("").text(userMercuryLifeExp);
+      $("").text(userVenusLifeExp);
+      $("").text(userMarsLifeExp);
+      $("").text(userJupiterLifeExp);
+    } else {
+      $("").show();
+      $("").text(userMercuryLifeExpSurpass);
+      $("").text(userVenusLifeExpSurpass);
+      $("").text(userMarsLifeExpSurpass);
+      $("").text(userJupiterLifeExpSurpass);
+    }
 
   });
 });
