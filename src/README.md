@@ -6,11 +6,11 @@
 
 ## Description
 
-This is a program will calculate the user's age on four planets
+This is a program will calculate the user's age on four planets.
 
 ## Setup/Installation Requirements
 
-* The program does not contain UI just yet. To install, clone the project and run npm install.
+* To install, clone the project using Git and run "npm install" in command line.
 
 ## Known Bugs
 
@@ -22,7 +22,7 @@ Please do not hesitate to contact me for whatever reason! I can be reached at sh
 
 ## Technologies Used
 
-The program was created using HTML, CSS, JQuery, Bootstrap, Jest, Npm, Webpack.
+The program was created using HTML, CSS, JQuery, Bootstrap, Jest, npm, Webpack.
 
 ### License
 
