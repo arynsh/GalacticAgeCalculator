@@ -26,6 +26,7 @@ $(document).ready(function() {
     let userVenusLifeExpSurpass = userAge.lifeExpVenusSurpass();
     let userMarsLifeExpSurpass = userAge.lifeExpMarsSurpass();
     let userJupiterLifeExpSurpass = userAge.lifeExpJupiterSurpass();
+
     let keithRichardsAge = new Keith (75);
     let keithRichardsDogAgeOnJup = keithRichardsAge.ageInDogYearsOnPlanetJupiter().toFixed(3);
 
@@ -50,7 +51,7 @@ $(document).ready(function() {
       $(".mercsur").text(userMercuryLifeExpSurpass);
       $(".venussur").text(userVenusLifeExpSurpass);
       $(".marssur").text(userMarsLifeExpSurpass);
-      $(".jupitersur").text(userJupiterLifeExpSurpass);
+      $(".jupsur").text(userJupiterLifeExpSurpass);
     }
 
   });
