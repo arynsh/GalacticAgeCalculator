@@ -63,3 +63,14 @@ describe('Age', () => {
   });
 
 });
+
+import { Keith } from './../src/galactic.js';
+
+describe('keith', () => {
+
+  test('should return keith richards age in dog years in 2073 on jupiter', () => {
+    let keithRichardsAge = new Keith (75);
+    expect(parseInt(keithRichardsAge.ageInDogYearsOnPlanetJupiter().toFixed())).toEqual(76);
+  });
+
+});
